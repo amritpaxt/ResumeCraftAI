@@ -1,0 +1,51 @@
+body {
+  margin:0;
+  font-family:'Inter',sans-serif;
+  background:#fefefe;
+  color:#1f2933;
+}
+
+/* Navbar */
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 60px;
+  background: #ffffffcc;
+  border-bottom: 1px solid #e5e7eb;
+  border-radius:12px;
+}
+
+.navbar span { color:#84cc16; }
+.navbar a { text-decoration:none; margin-left:20px; font-weight:600; color:#1f2933; }
+
+/* Hero */
+.hero { display:flex; justify-content:space-between; padding:80px 60px; }
+.hero-left h1 { font-size:56px; line-height:1.2; }
+.hero-left h1 span { color:#84cc16; }
+.hero-left p { font-size:20px; margin-top:20px; color:#4b5563; }
+.btn { padding:16px 40px; background:#84cc16; border-radius:12px; color:#1f2933; font-weight:600; font-size:18px; text-decoration:none; transition:0.3s; }
+.btn:hover { transform:scale(1.05); }
+
+/* Features */
+.features { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; padding:60px; }
+.feature-card { background:#ffffffcc; padding:30px; border-radius:18px; font-size:18px; font-weight:600; text-align:center; transition:0.3s; }
+.feature-card:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.1); }
+
+/* Analysis cards */
+.analysis-grid, .progress-cards, .timeline { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:40px; }
+.analysis-card, .progress-card, .timeline-step { background:#ffffffcc; padding:30px; border-radius:18px; font-size:18px; font-weight:600; transition:0.3s; }
+.analysis-card:hover, .progress-card:hover, .timeline-step:hover { transform:translateY(-10px); box-shadow:0 20px 40px rgba(0,0,0,0.1); }
+
+/* Animated background */
+.animated-bg { position:fixed; width:100%; height:100%; background: radial-gradient(circle at 20% 20%, #84cc1620, transparent), radial-gradient(circle at 80% 80%, #f5f5dc20, transparent); animation: float 12s infinite alternate; z-index:-1; }
+@keyframes float { from { transform:scale(1); } to { transform:scale(1.1); } }
+
+/* Subtitle */
+.subtitle { font-size:18px; color:#6b7280; margin-bottom:20px; }
+
+/* Pie chart */
+.circular-chart { max-width:120px; display:block; margin:auto; }
+.circle-bg { fill:none; stroke:#eee; stroke-width:3.8; }
+.circle { fill:none; stroke:#84cc16; stroke-width:3.8; stroke-linecap:round; transition:stroke-dasharray 0.6s; }
+.percentage { fill:#1f2933; font-size:8px; text-anchor:middle; }
